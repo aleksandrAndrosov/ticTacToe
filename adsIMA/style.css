@@ -1,0 +1,20 @@
+#adsContainer {
+  display: none;
+  position: relative;
+  width: 1920px;
+  height: 480px;
+  z-index: 100;
+}
+#content, #adContainer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 480px;
+}
+
+#contentElement {
+  width: 1920px;
+  height: 480px;
+  overflow: hidden;
+}

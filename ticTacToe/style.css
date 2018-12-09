@@ -1,0 +1,93 @@
+header, main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#board {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 306px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.x:before {
+    content: '';
+    height: 100px;
+    width: 5px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+
+.x:after {
+    content: '';
+    height: 100px;
+    width: 5px;
+    background-color: black;
+    transform: rotate(-45deg);
+}
+
+.o:before {
+    content: '';
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 80px;
+    height: 80px;
+}
+
+.active-cell {
+    background-color: #ffbb00;
+}
+
+.menu {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: yellow;
+    z-index: 1;
+}
+
+.menu-active {
+    display: flex;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    background-color: gainsboro;
+    border: 1px black solid;
+    font-size: 20px;
+}
+
+.btn-active {
+    background-color: aqua;
+    border: 5px black solid;
+}
+
+#game-over {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
